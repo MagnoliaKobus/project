@@ -1,7 +1,7 @@
 const KEY = "d18bfc52627fefdb3fbe3c963a5a0a5d";
 
-const urlArtist = `http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${KEY}&format=json`;
-const urlTrack = `http://ws.audioscrobbler.com/2.0/?method=chart.getTopTracks&api_key=${KEY}&format=json`;
+const urlArtist = `https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${KEY}&format=json`;
+const urlTrack = `https://ws.audioscrobbler.com/2.0/?method=chart.getTopTracks&api_key=${KEY}&format=json`;
 fetch(urlArtist)
   .then((response) => response.json())
   .then((data) => {
