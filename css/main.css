@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Water+Brush&display=swap");
+
+#logo {
+  margin: 0px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: "Water Brush", cursive;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  text-align: center;
+  font-size: 50px;
+  color: darkblue;
+}
+h2 {
+  font-family: "Nanum Pen Script", cursive;
+  margin: 0px;
+  margin-left: 140px;
+  margin-top: 50px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(9, 49, 38);
+}
+.outer {
+  border: 6px solid white;
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  margin: 0px;
+  margin-left: 140px;
+  margin-top: 50px;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+}
+
+.inner-list {
+  display: flex;
+  transition: 0.3s ease-out;
+  height: 100%;
+}
+
+.inner {
+  border: 6px solid white;
+}
+
+.button-list {
+  position: absolute;
+  top: 93%;
+  left: 87%;
+  text-align: center;
+}
+
+.first {
+  border-radius: 100px;
+  width: 488px;
+  height: 388px;
+  background-color: red;
+  background-size: cover;
+}
+.second {
+  border-radius: 100px;
+  width: 488px;
+  height: 388px;
+  background-color: green;
+  background-size: cover;
+}
+.third {
+  border-radius: 100px;
+  width: 488px;
+  height: 388px;
+  background-color: blue;
+  background-size: cover;
+}
