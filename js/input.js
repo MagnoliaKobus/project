@@ -14,5 +14,5 @@ const SavedUsername = localStorage.getItem(USERNAME_KEY);
 if (SavedUsername === null) {
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
-  window.location.href = "main.html";
+  window.location.href = "index.html";
 }
