@@ -5,7 +5,6 @@ const urlTrack = `https://ws.audioscrobbler.com/2.0/?method=chart.getTopTracks&a
 fetch(urlArtist)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     const artist = document.getElementById("artist");
 
     for (step = 0; step < data.artists.artist.length; step++) {
@@ -24,12 +23,10 @@ fetch(urlArtist)
       tr1.appendChild(td3);
       artist.appendChild(tr1);
     }
-    console.log(data.artists.artist.length);
   });
 fetch(urlTrack)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     const track = document.getElementById("track");
     for (step = 0; step < data.tracks.track.length; step++) {
       const tr2 = document.createElement("tr");
@@ -47,5 +44,4 @@ fetch(urlTrack)
       tr2.appendChild(td3);
       track.appendChild(tr2);
     }
-    console.log(data.tracks.track.length);
   });
