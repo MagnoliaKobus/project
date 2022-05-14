@@ -8,11 +8,29 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <div>
-      <h1 id="logo">Junsik</h1>
-      <h2 id="greeting"></h2>
-    </div>
-    <a href="./chart.html">chart</a>
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="header clearfix">
+            <h1>
+              <a href="#">
+                <h2 id="logo">Junsik</h2>
+                <h3 id="greeting"></h3>
+              </a>
+              <nav class="nav">
+                <ul class="clearfix">
+                  <li><a href="./chart.html">차트</a></li>
+                  <li><a href="#">게시판</a></li>
+                  <li id="reset"><a href="#">초기 화면으로 이동</a></li>
+                </ul>
+              </nav>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div></div>
+
     <div class="outer">
       <div class="inner-list">
         <div class="inner">
@@ -30,9 +48,7 @@
         <button class="button-right">▶︎</button>
       </div>
     </div>
-    <button id="reset">초기 화면으로 이동</button>
     <h3 id="test"></h3>
   </body>
   <script src="js/greeting.js"></script>
-  <script src="js/api.js"></script>
 </html>

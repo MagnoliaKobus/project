@@ -1,35 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Water+Brush&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Water+Brush&display=swap");
 
-#logo {
-  margin: 0px;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-family: "Water Brush", cursive;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  text-align: center;
-  font-size: 50px;
-  color: darkblue;
+@import url(/css/reset.css);
+
+/* 레이아웃 */
+#header {
+  width: 100%;
+  height: 63px;
+  border-bottom: 1px solid #c6c6c6;
+  background: rgba(0, 0, 0, 0);
 }
-h2 {
-  font-family: "Nanum Pen Script", cursive;
-  margin: 0px;
-  margin-left: 140px;
-  margin-top: 50px;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  text-align: center;
-  font-size: 25px;
-  color: rgb(9, 49, 38);
+
+/* 가운데 영역 */
+.container {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0);
 }
-.outer {
-  border: 6px solid white;
+
+/* 로우 영역 */
+.row {
+  padding: 0 24px;
+}
+
+/* 헤더 영역 */
+.header {
+}
+.header h1 {
+  float: left;
+}
+.header h2 {
+  padding: 0px 8px 5px 0;
+  display: inline-block;
   width: 500px;
-  height: 400px;
+  font-size: 45px;
+}
+.header h3 {
+  display: block;
+  position: absolute;
+  left: 194px;
+  top: 30px;
+  width: 280px;
+  font-size: 20px;
+}
+.header .nav {
+  float: right;
+}
+.header .nav ul {
+  border-left: 1px solid #c6c6c6;
+}
+.header .nav ul li {
+  float: left;
+  width: 170px;
+  text-align: center;
+  border-right: 1px solid #c6c6c6;
+}
+.header .nav ul li a {
+  display: block;
+  padding: 19px 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #444;
+}
+
+.outer {
+  border: none;
+  width: 500px;
+  height: 500px;
   margin: 0 auto;
   overflow-x: hidden;
   margin: 0px;
@@ -47,7 +84,7 @@ h2 {
 }
 
 .inner {
-  border: 6px solid white;
+  border: none;
 }
 
 .button-list {
@@ -58,23 +95,20 @@ h2 {
 }
 
 .first {
-  border-radius: 100px;
-  width: 488px;
-  height: 388px;
-  background-color: red;
+  width: 500px;
+  height: 500px;
+  background-image: url("http://coverartarchive.org/release/0be6b82e-cbee-4c55-a52f-62b33eba6df3/25279105088.jpg");
   background-size: cover;
 }
 .second {
-  border-radius: 100px;
-  width: 488px;
-  height: 388px;
-  background-color: green;
+  width: 500px;
+  height: 500px;
+  background-image: url("http://coverartarchive.org/release/fdd45106-192c-4da8-ac07-ec21351439e1/31829752850.jpg");
   background-size: cover;
 }
 .third {
-  border-radius: 100px;
-  width: 488px;
-  height: 388px;
-  background-color: blue;
+  width: 500px;
+  height: 500px;
+  background-image: url("http://coverartarchive.org/release/7ec22411-8195-4630-97ae-dc0b82380c19/32124019059.jpg");
   background-size: cover;
 }

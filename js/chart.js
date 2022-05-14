@@ -2,6 +2,8 @@ const KEY = "d18bfc52627fefdb3fbe3c963a5a0a5d";
 
 const urlArtist = `https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${KEY}&format=json`;
 const urlTrack = `https://ws.audioscrobbler.com/2.0/?method=chart.getTopTracks&api_key=${KEY}&format=json`;
+const urlSearch = `http://www.musicbrainz.org/ws/2/recording/?query=artist:changmo`;
+
 fetch(urlArtist)
   .then((response) => response.json())
   .then((data) => {
