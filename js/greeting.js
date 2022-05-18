@@ -64,3 +64,27 @@ const getInterval = () => {
 let interval = getInterval();
 
 document.body.classList.add("stop-scroll");
+
+const KEY = "d18bfc52627fefdb3fbe3c963a5a0a5d";
+const urlTrack = `https://ws.audioscrobbler.com/2.0/?method=chart.getTopTracks&api_key=${KEY}&format=json`;
+fetch(urlTrack)
+  .then((response) => response.json())
+  .then((data) => {
+    const track = document.getElementById("track");
+    for (step = 0; step < 20; step++) {
+      const tr2 = document.createElement("tr");
+      const td1 = document.createElement("td");
+      const td2 = document.createElement("td");
+      const td3 = document.createElement("td");
+      const a = document.createElement("a");
+      td1.innerText = `${step + 1}`;
+      a.innerText = `${data.tracks.track[step].name}`;
+      a.href = `${data.tracks.track[step].url}`;
+      td2.appendChild(a);
+      td3.innerText = `${data.tracks.track[step].playcount}회`;
+      tr2.appendChild(td1);
+      tr2.appendChild(td2);
+      tr2.appendChild(td3);
+      track.appendChild(tr2);
+    }
+  });

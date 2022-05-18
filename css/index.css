@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Water+Brush&display=swap");
+@charset "utf-8";
 
-@import url(/css/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Water+Brush&display=swap");
 
 /* 레이아웃 */
 #header {
@@ -40,7 +40,7 @@
   position: absolute;
   left: 194px;
   top: 30px;
-  width: 280px;
+  width: 200px;
   font-size: 20px;
 }
 .header .nav {
@@ -65,50 +65,164 @@
 
 .outer {
   border: none;
-  width: 500px;
-  height: 500px;
+  width: 900px;
+  height: 450px;
   margin: 0 auto;
-  overflow-x: hidden;
-  margin: 0px;
-  margin-left: 140px;
-  margin-top: 50px;
+  overflow: hidden;
   position: absolute;
-  top: 10%;
-  left: 0%;
+  top: 126px;
+  left: 120px;
 }
 
 .inner-list {
-  display: flex;
   transition: 0.3s ease-out;
   height: 100%;
 }
 
 .inner {
   border: none;
+  display: flex;
+  float: left;
 }
-
-.button-list {
+.button-left {
   position: absolute;
-  top: 93%;
-  left: 87%;
+  top: 50%;
+  left: 2%;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 25px;
+  color: white;
+  opacity: 70%;
+}
+.button-right {
+  position: absolute;
+  top: 50%;
+  left: 93%;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 25px;
+  color: white;
+  opacity: 70%;
+}
+.first img {
+  width: 450px;
+  height: 450px;
+}
+.first .about {
+  width: 450px;
+  height: 450px;
+  line-height: 200px;
+  background-color: rgb(0, 0, 50);
+  color: white;
   text-align: center;
+  float: right;
 }
-
-.first {
-  width: 500px;
-  height: 500px;
-  background-image: url("http://coverartarchive.org/release/0be6b82e-cbee-4c55-a52f-62b33eba6df3/25279105088.jpg");
+.first .about h3 {
+  font-size: 30px;
+}
+.first .about p {
+  line-height: 30px;
+  font-size: 15px;
+}
+.second img {
+  width: 450px;
+  height: 450px;
+}
+.second .about {
+  width: 450px;
+  height: 450px;
+  line-height: 200px;
+  background-color: rgb(0, 0, 50);
+  color: white;
+  text-align: center;
+  float: right;
+}
+.second .about h3 {
+  font-size: 30px;
+}
+.second .about p {
+  line-height: 30px;
+  font-size: 15px;
+}
+.third img {
+  width: 450px;
+  height: 450px;
+}
+.third .about {
+  width: 450px;
+  height: 450px;
+  line-height: 200px;
+  background-color: rgb(0, 0, 50);
+  color: white;
+  text-align: center;
+  float: right;
+}
+.third .about h3 {
+  font-size: 30px;
+}
+.third .about p {
+  line-height: 30px;
+  font-size: 15px;
+}
+.mini {
+  position: absolute;
+  top: 110px;
+  right: 120px;
+}
+#track caption {
+  font-size: 15px;
+  color: rgb(0, 0, 50);
+}
+/* font-size: 40px; */
+footer {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: rgb(0, 0, 50);
+  color: white;
+}
+.figure1 {
+  position: absolute;
+  width: 25%;
+  height: 55%;
+  top: 80%;
+  font-size: 18px;
+  color: white;
+  line-height: 40px;
+  box-shadow: 21px 20px 0px 0px rgba(0, 0, 50, 0.5);
+  left: 120px;
+  border-radius: 15px;
+  background-image: url("https://visla.kr/wp/wp-content/uploads/2021/03/20210313-00.jpg");
   background-size: cover;
 }
-.second {
-  width: 500px;
-  height: 500px;
-  background-image: url("http://coverartarchive.org/release/fdd45106-192c-4da8-ac07-ec21351439e1/31829752850.jpg");
+.text {
+  margin: 30px 20px 0px 20px;
+}
+.figure2 {
+  position: absolute;
+  width: 25%;
+  height: 55%;
+  top: 80%;
+  font-size: 18px;
+  color: white;
+  line-height: 40px;
+  box-shadow: 21px 20px 0px 0px rgba(0, 0, 50, 0.5);
+  left: 550px;
+  border-radius: 15px;
+  background-image: url("https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F3c%2F37%2F7b%2F3c377b161e1be46d25c86c0c2feb6b45.jpg&type=sc960_832");
   background-size: cover;
 }
-.third {
-  width: 500px;
-  height: 500px;
-  background-image: url("http://coverartarchive.org/release/7ec22411-8195-4630-97ae-dc0b82380c19/32124019059.jpg");
+.figure3 {
+  position: absolute;
+  width: 25%;
+  height: 55%;
+  top: 80%;
+  font-size: 18px;
+  color: white;
+  line-height: 40px;
+  box-shadow: 21px 20px 0px 0px rgba(0, 0, 50, 0.5);
+  left: 980px;
+  border-radius: 15px;
+  background-image: url("https://w.namu.la/s/b9ded791a9c4fae989816ea531c993e1ebab2a9854e48c1714482874057ec5df1aed6ba49759ffa07771288735c60ff1d9539b2e62528a017c5e2d5f9c16ce2eeed98cd35906a1b0c5cc92964bf011df3815619a7d10870603934f08298c09b05602e3f3a686e96f63bdce68c4ab1cf0");
   background-size: cover;
 }

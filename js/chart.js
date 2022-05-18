@@ -2,7 +2,6 @@ const KEY = "d18bfc52627fefdb3fbe3c963a5a0a5d";
 
 const urlArtist = `https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${KEY}&format=json`;
 const urlTrack = `https://ws.audioscrobbler.com/2.0/?method=chart.getTopTracks&api_key=${KEY}&format=json`;
-const urlSearch = `http://www.musicbrainz.org/ws/2/recording/?query=artist:changmo`;
 
 fetch(urlArtist)
   .then((response) => response.json())
@@ -19,7 +18,7 @@ fetch(urlArtist)
       a.innerText = `${data.artists.artist[step].name}`;
       a.href = `${data.artists.artist[step].url}`;
       td2.appendChild(a);
-      td3.innerText = `${data.artists.artist[step].playcount}`;
+      td3.innerText = `${data.artists.artist[step].playcount}회`;
       tr1.appendChild(td1);
       tr1.appendChild(td2);
       tr1.appendChild(td3);
@@ -40,7 +39,7 @@ fetch(urlTrack)
       a.innerText = `${data.tracks.track[step].name}`;
       a.href = `${data.tracks.track[step].url}`;
       td2.appendChild(a);
-      td3.innerText = `${data.tracks.track[step].playcount}`;
+      td3.innerText = `${data.tracks.track[step].playcount}회`;
       tr2.appendChild(td1);
       tr2.appendChild(td2);
       tr2.appendChild(td3);
