@@ -71,7 +71,7 @@ fetch(urlTrack)
   .then((response) => response.json())
   .then((data) => {
     const track = document.getElementById("track");
-    for (step = 0; step < 20; step++) {
+    for (step = 0; step < 15; step++) {
       const tr2 = document.createElement("tr");
       const td1 = document.createElement("td");
       const td2 = document.createElement("td");

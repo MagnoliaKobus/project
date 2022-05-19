@@ -23,28 +23,45 @@
 }
 
 #artist {
-  font-size: 20px;
-  margin-left: 150px;
-  margin-right: 300px;
-  text-align: center;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin-left: 250px;
   float: left;
 }
+#artist th {
+  padding: 10px;
+  color: rgb(0, 0, 50);
+  border-bottom: 3px solid #168;
+  text-align: left;
+}
+#artist td {
+  color: #669;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+#artist tr:hover td {
+  color: #004;
+}
 #track {
-  font-size: 20px;
-  margin: 0;
-  text-align: center;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin-left: 700px;
+}
+#track th {
+  padding: 10px;
+  color: rgb(0, 0, 50);
+  border-bottom: 3px solid #168;
+  text-align: left;
+}
+#track td {
+  color: #669;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+#track tr:hover td {
+  color: #004;
 }
 caption {
   font-size: 30px;
   margin-bottom: 30px;
-}
-td {
-  border-top: 1px solid #c6c6c6;
-  border-bottom: 1px solid #c6c6c6;
-}
-td a {
-  padding: 19px 10px;
-  font-size: 17px;
-  font-weight: 700;
-  color: #444;
 }
