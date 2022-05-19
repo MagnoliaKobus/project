@@ -6,8 +6,8 @@ const urlTrack = `https://ws.audioscrobbler.com/2.0/?method=chart.getTopTracks&a
 fetch(urlArtist)
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     const artist = document.getElementById("artist");
-
     for (step = 0; step < data.artists.artist.length; step++) {
       const tr1 = document.createElement("tr");
       const td1 = document.createElement("td");
