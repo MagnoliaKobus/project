@@ -24,7 +24,7 @@
 
 #artist {
   border-collapse: collapse;
-  font-size: 15px;
+  font-size: 20px;
   margin-left: 250px;
   float: left;
 }
@@ -44,8 +44,8 @@
 }
 #track {
   border-collapse: collapse;
-  font-size: 15px;
-  margin-left: 700px;
+  font-size: 20px;
+  margin-left: 900px;
 }
 #track th {
   padding: 10px;

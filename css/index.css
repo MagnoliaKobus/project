@@ -62,7 +62,7 @@
   font-weight: 700;
   color: #444;
 }
-
+/* 슬라이드 영역 */
 .outer {
   border: none;
   width: 900px;
@@ -70,7 +70,7 @@
   margin: 0 auto;
   overflow: hidden;
   position: absolute;
-  top: 126px;
+  top: 150px;
   left: 120px;
 }
 
@@ -162,20 +162,22 @@
   line-height: 30px;
   font-size: 15px;
 }
+/* 차트 영역 */
 .mini {
   position: absolute;
   top: 110px;
-  right: 120px;
+  right: 270px;
 }
 #track caption {
-  font-size: 15px;
+  font-size: 20px;
   color: rgb(0, 0, 50);
 }
 #track {
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: 15px;
   margin-left: 250px;
   float: left;
+  z-index: -2;
 }
 #track th {
   padding: 10px;
@@ -226,7 +228,7 @@ footer {
   color: white;
   line-height: 40px;
   box-shadow: 21px 20px 0px 0px rgba(0, 0, 50, 0.5);
-  left: 550px;
+  left: 650px;
   border-radius: 15px;
   background-image: url("https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F3c%2F37%2F7b%2F3c377b161e1be46d25c86c0c2feb6b45.jpg&type=sc960_832");
   background-size: cover;
@@ -240,7 +242,7 @@ footer {
   color: white;
   line-height: 40px;
   box-shadow: 21px 20px 0px 0px rgba(0, 0, 50, 0.5);
-  left: 980px;
+  left: 1180px;
   border-radius: 15px;
   background-image: url("https://w.namu.la/s/b9ded791a9c4fae989816ea531c993e1ebab2a9854e48c1714482874057ec5df1aed6ba49759ffa07771288735c60ff1d9539b2e62528a017c5e2d5f9c16ce2eeed98cd35906a1b0c5cc92964bf011df3815619a7d10870603934f08298c09b05602e3f3a686e96f63bdce68c4ab1cf0");
   background-size: cover;
