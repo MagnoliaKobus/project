@@ -83,3 +83,10 @@ input[type="text"] {
   animation: rotate 7500ms infinite linear;
   background-color: rgba(196, 255, 255, 0.2);
 }
+strong {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 35%;
+  top: 70%;
+}
